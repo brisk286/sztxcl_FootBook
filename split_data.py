@@ -14,6 +14,6 @@ if __name__ == '__main__':
 
     for file in files:
         if file in testFiles:
-            shutil.copyfile(allData + "\\" + file, testData + file)
+            shutil.copyfile(allData + "\\" + file, testData + "\\" + file)
         else:
-            shutil.copyfile(allData + "\\" + file, trainData + file)
+            shutil.copyfile(allData + "\\" + file, trainData + "\\" + file)
